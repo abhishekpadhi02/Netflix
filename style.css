@@ -182,12 +182,20 @@ section.first>div :nth-child(2) {
 
 }
 
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
 .faq {
-    /* max-width: 600px; */
-    margin: auto;
-    padding: 20px;
-    max-width: 60vw;
-   
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
 }
 
 .faqbox svg {
@@ -195,49 +203,16 @@ section.first>div :nth-child(2) {
 }
 
 .faqbox {
-    background: #222;
-    color: white;
-    margin-bottom: 15px;
-    padding: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  
-    
-}
-
-.faqbox:hover {
-    background: #333;
-}
-
-.question {
+    transition: all 1s ease-out;
+    font-size: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
 }
-
-.answer {
-    display: none;
-    padding-top: 10px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.faqbox.active .answer {
-    display: block;
-}
-
-.icon {
-    transition: transform 0.3s ease;
-    color: white;
-}
-
-.faqbox.active .icon {
-    transform: rotate(45deg);
-}
-
 
 
 footer {
